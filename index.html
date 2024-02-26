@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <header class="header">
+            <div class="header__container _container">
+                <a href="#" class="header__icon">
+                    <img src="img/header/arrow-left.svg" alt="">
+                </a>
+                <a href="#" class="header__icon">
+                    <img src="img/header/home.svg" alt="">
+                </a>
+            </div>
+        </header>
+        <section class="page__food food">
+            <div class="wrapper _container">
+                <ul class="tabs-box">
+                  <li class="tab active" onclick="changeTab(1)">
+                    <img src="img/slider/beverage.svg" alt="">
+                    <span class="tab__text">Еда</span>
+                  </li>
+                  <li class="tab" onclick="changeTab(2)">
+                    <img src="img/slider/circus.svg" alt="">
+                    <span class="tab__text">Интересные места</span>
+                  </li>
+                  <li class="tab" onclick="changeTab(3)">
+                    <img src="img/slider/dance.svg" alt="">
+                    <span class="tab__text">Развлечения</span>
+                  </li>
+                  <li class="tab" onclick="changeTab(4)">
+                    <img src="img/slider/castle.svg" alt="">
+                    <span class="tab__text">Музеи и выставки</span>
+                  </li>
+                  <li class="tab" onclick="changeTab(5)">
+                    <img src="img/slider/tree.svg" alt="">
+                    <span class="tab__text">Загородом</span>
+                  </li>
+                  <li class="tab" onclick="changeTab(6)">
+                    <img src="img/slider/search.svg" alt="">
+                    <span class="tab__text">Экскурсии</span>
+                  </li>
+                </ul>
+                <div class="tab-content active" id="tab1">
+                </div>
+                <div class="tab-content" id="tab2">
+                </div>
+                <div class="tab-content" id="tab3">
+                </div>
+              </div>
+              
+            <div class="food__header _container">
+                <div class="food__content">
+                    <div class="food__title">Еда</div>
+                    <div class="food__desc">Нажмите на кнопку «фильтры», чтобы выбрать наиболее подходящее место</div>
+                </div>
+                <div class="food__icon">
+                    <img src="img/slider/tool.svg" alt="">
+                </div>
+            </div>
+            <div class="food__bottom _container">
+                <div class="food__row">
+                    <div class="food__column ">
+                        <img  src="img/food/01.svg" alt="John Smith">
+                        <div class="main-like">
+                            <img src="img/food/heart.svg" alt="">
+                        </div>
+                        <h2 class="food__name">ПРОСТРАНСТВА</h2>
+                        <p class="food__position">Севкабель Порт</p>
+                    </div>
+            
+                    <div class="food__column">
+                    <img class="_ibg" src="img/food/02.svg" alt="John Smith">
+                        <div class="main-like">
+                            <img src="img/food/heart.svg" alt="">
+                        </div>
+                        <h2 class="food__name">ПРОСТРАНСТВА</h2>
+                        <p class="food__position">Третье Место</p>
+                    </div>
+            
+                    <div class="food__column">
+                       <img class="_ibg" src="img/food/03.svg"alt="John Smith">
+                        <div class="main-like">
+                            <img src="img/food/heart.svg" alt="">
+                        </div>
+                        <h2 class="food__name">КОНЦЕРТ</h2>
+                        <p class="food__position">Концерт в студии при свечах</p>
+                    </div>
+                    <div class="food__column">
+                        <img class="_ibg" class="_ibg" src="img/food/04.svg" alt="John Smith">
+                        <div class="main-like">
+                            <img src="img/food/heart.svg" alt="">
+                        </div>
+                        <h2 class="food__name" >КОНЦЕРТ</h2>
+                        <p class="food__position">Вивальди. Времена года</p>
+                    </div>
+                    <div class="food__column">
+                        <img class="_ibg" src="img/food/01.svg" alt="John Smith">
+                        <div class="main-like">
+                            <img src="img/food/heart.svg" alt="">
+                        </div>
+                        <h2 class="food__name">ПРОСТРАНСТВА</h2>
+                        <p class="food__position">Севкабель Порт</p>
+                    </div>
+                    <div class="food__column">
+                        <img class="_ibg" src="img/food/02.svg" alt="John Smith">
+                        <div class="main-like">
+                            <img src="img/food/heart.svg" alt="">
+                        </div>
+                        <h2 class="food__name" >ПРОСТРАНСТВА</h2>
+                        <p class="food__position">Третье место</p>
+                    </div>
+                    
+                    <div class="food__column">
+                        <img class="_ibg" src="img/food/05.svg" alt="John Smith">
+                        <div class="main-like">
+                            <img src="img/food/heart.svg" alt="">
+                        </div>
+                        <h2 class="food__name">КОНЦЕРТ</h2>
+                        <p class="food__position">Чайковский. Ноктюрн номер 6</p>
+                    </div>
+                    <div class="food__column">
+                        <img class="_ibg" src="img/food/06.svg" alt="John Smith"></a>
+                        <div class="main-like">
+                            <img src="img/food/heart.svg" alt="">
+                        </div>
+                        <h2 class="food__name" >КОНЦЕРТ</h2>
+                        <p class="food__position">Chang cafe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page__map map">
+            <div class="map__container _container">
+                <div class="map__content">
+                    <div class="map__title">Онлайн-карта</div>
+                    <div class="map__desc">Интерактивная карта в Google Maps с местами города. Ищите новые места <p>рядом с вами!</p></div>
+                </div>
+                <img src="img/map/map.svg" alt="">
+                <a class="map-btn">ОТКРЫТЬ ОНЛАЙН-КАРТУ</a>
+            </div>
+        </section>
+        <script src="script.js"></script>
+</body>
+</html>
